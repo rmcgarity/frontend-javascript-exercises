@@ -74,7 +74,7 @@ describe("findLastMatch", function() {
     expect(challenge.findLastMatch("Roses are red.", "red")).to.eql(10);
   });
 
-  it("should return the first match", function() {
+  it("should return the last match", function() {
     expect(challenge.findLastMatch("red red red red", "red")).to.eql(12);
   });
 });
