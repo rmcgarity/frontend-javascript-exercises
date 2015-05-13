@@ -3,13 +3,13 @@ module.exports.favoriteNumber = function(fav, guess) {
     // "Too low" if `guess` is less than `fav` 
     // "You got it!" if `guess` is equal to `fav`
     
-    //if (guess > fav) {
-    //    return "Too high";
-    //} else if (guess < fav) }
-    //    return "Too low";
-    //} else {
-    //    return "You got it!";
-    //}
+    if (guess > fav) {
+        return "Too high";
+    } else if (guess < fav) {
+        return "Too low";
+    } else {
+        return "You got it!";
+    }
 };
 
 module.exports.checkLock = function(first, second, third, fourth) {
