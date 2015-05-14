@@ -7,6 +7,7 @@ module.exports.newArray = function(one, two, three, four) {
 module.exports.firstAndLast = function(incomingArray) {
     // take one argument, an array with at least 3 elements
     // return a new array with the first and last element of the passed array
-    var returnVal = [incomingArray[0], incomingArray[incomingArray.length]-1];
+    var lastIndex = incomingArray.length-1;
+    var returnVal = [incomingArray[0], incomingArray[lastIndex]];
     return(returnVal);
 };
