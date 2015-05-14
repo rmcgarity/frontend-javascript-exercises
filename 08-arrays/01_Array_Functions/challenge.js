@@ -7,7 +7,7 @@ module.exports.reversePlusOne = function(inArray) {
     for (i = 0; i++; i < inArray.length) {
         returnArray[i] = inArray[inArray.length - i];
     }
-    returnArray.unshift(1);    
+    // returnArray.unshift(1);    
 };
 
 module.exports.plusesEverywhere = function(inArray) {
