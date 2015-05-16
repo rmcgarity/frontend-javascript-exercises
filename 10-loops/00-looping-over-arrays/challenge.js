@@ -21,9 +21,9 @@ module.exports.splitAndLowerCaseString = function(inString) {
 module.exports.addIndex = function(inObject) {
      // EX: addIndex(['My', 1, 'number']) // returns ["0 is My", "1 is 1", "2 is number"]
      var returnArray = [];
-     var i = 0;
+     
      for (var item in inObject) {
-         returnArray[i++] = item + " is " + inObject[item];
+         returnArray.push(item + " is " + inObject[item]);
      }
      return(returnArray);
 };
